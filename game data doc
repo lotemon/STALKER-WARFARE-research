@@ -1,0 +1,25 @@
+Here's a list of the warfare system components in the  gamedata codebase that you can nullify disable or modify for any porpuse.
+
+warfare.script
+warfare_factions.script
+warfare_levels.script
+warfare_options.script
+smart_terrain_warfare.script
+sim_squad_warfare.script
+pda_warfare.script
+ui_warfare.script
+ui_warfare_tab.script
+ui_warfare_menu.script
+warfare_faction_control.script
+warfare_ai.script
+warfare_tasks.script
+warfare_heli.script
+warfare_game_state.script
+
+  
+To disable these, you can rename or remove these files, or modify their contents to return immediately without executing any warfare-related code. Additionally, you'll want to check and possibly modify:
+
+_g.script (for any warfare-related global variables or functions)
+sim_board.script (for warfare-related simulation board modifications)
+game_relations.script (for warfare-specific faction relations)
+Disabling these components will effectively shut down the vanilla warfare system, allowing you to implement a new standalone mod without conflicts.
